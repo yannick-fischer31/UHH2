@@ -11,7 +11,8 @@
 
         <!-- Verion attribute must have year in it, same as used in ntuple config, e.g. 2018, 2016v3, etc -->
         <InputData Lumi="1" NEventsMax="-1" Type="MC" Version="Example_2018" Cacheable="False">
-            <In FileName="Ntuple.root" Lumi="0.0"/>
+            <!--<In FileName="Ntuple.root" Lumi="0.0"/>-->
+            <In FileName="/pnfs/desy.de/cms/tier2/store/user/drberry/SFrameNtuples/RunII_102X_v1/2018/WW_TuneCP5_13TeV-pythia8/WW_TuneCP5_13TeV-pythia8/190404_191204/0000/Ntuple_792.root" Lumi="0.0"/>
             <InputTree Name="AnalysisTree" />
             <!-- uncomment to write tree of selected events, i.e. of those events for which the AnalysisModule::process method  returns true
             If no OutputTree is given, no events will be written.
